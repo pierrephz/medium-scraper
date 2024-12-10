@@ -65,7 +65,7 @@ a {
 
 .container {
   max-width: 100vw;
-  min-height: 100vh;
+  min-height: 95vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -91,6 +91,7 @@ button {
   margin: 1.5rem 0;
   background-color: #303030;
   color: white;
+  border: none;
   font-weight: bold;
   border-radius: 12px;
   cursor: pointer;
