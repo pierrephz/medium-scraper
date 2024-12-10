@@ -65,7 +65,7 @@ a {
 
 .container {
   max-width: 100vw;
-  min-height: 95vh;
+  min-height: 100vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -192,6 +192,7 @@ button:hover {
   .container {
     padding: 4rem 1rem;
     gap: 3rem;
+    height: 95vh;
   }
 
   .hero {
@@ -209,6 +210,12 @@ button:hover {
 
   .article {
     padding: 1.2rem;
+  }
+
+  .article:hover {
+    box-shadow: inherit;
+    rotate: none;
+    transform: none;
   }
 
 }
