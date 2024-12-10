@@ -1,3 +1,5 @@
+console.log("script.js loaded");
+
 let allArticles = []; // Store all articles fetched from the API
 
 // Function to show a loading spinner on a button
@@ -55,13 +57,11 @@ function displayRandomArticles() {
     const articleElement = document.createElement("div");
     articleElement.classList.add("article");
     articleElement.innerHTML = `
-      <img src="${article.cover}" alt="${article.title}">
-      <div class="article-content">
-        <h2>${article.title}</h2>
-        <p>By: ${article.author}</p>
-        <p>${article.date}</p>
-        <a href="${article.link}" target="_blank">Read More</a>
+      <div class="article-header">
+        <img src="${article.cover}" alt="${article.title}">
+        <a href="${article.link}" target="_blank"><h3>${article.title} <span>↗</span></h3></a>
       </div>
+      <p>By ${article.author} on ${article.date}</p>
     `;
     articlesContainer.appendChild(articleElement);
   });
