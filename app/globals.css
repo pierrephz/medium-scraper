@@ -77,7 +77,7 @@ a {
   gap: 1.5rem;
 }
 
-.info {
+.alert {
   border-radius: 12px;
   background-color: #E5F3FF;
   padding: 1.5rem;
@@ -87,7 +87,7 @@ a {
   gap: .8rem;
 }
 
-.info-text {
+.alert-text {
   color: #2693FF;
   font-weight: 500;
 }
@@ -198,6 +198,21 @@ button:hover {
 
   p {
     font-size: 1rem;
+  }
+
+  .alert {
+    padding: 1rem;
+    gap: .5rem;
+    align-items: flex-start;
+  }
+
+  .alert-icon {
+    width: 24px;
+  }
+
+  .alert-text {
+    font-size: 1.1rem;
+    margin-top: 3px;
   }
 
   .article-img {

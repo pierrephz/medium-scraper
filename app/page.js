@@ -7,16 +7,16 @@ export default function Home() {
       <div className="hero">
         <h1>Curated Medium articles</h1>
         <h2>Read some curated UI/UX design article from Medium.</h2>
-        <div className="info">
+        <div className="alert">
           <Image
-            src="icons/icon-info-circle.svg"
-            alt="Information Icon"
+            src="icons/icon-alert-circle.svg"
+            alt="Alert Icon"
             width={32}
             height={32}
-            className="info-icon"
+            className="alert-icon"
           />
-          <h3 className="info-text">
-            Some articles might require a premium account.
+          <h3 className="alert-text">
+            Some articles might require a premium Medium account.
           </h3>
         </div>
         <button id="scrape-button">Scrape my list</button>
