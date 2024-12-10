@@ -37,7 +37,6 @@ async function fetchArticles(button) {
   }
 }
 
-// Function to display 6 random articles
 function displayRandomArticles() {
   const articlesContainer = document.getElementById("articles");
   articlesContainer.innerHTML = ""; // Clear the previous articles
@@ -54,15 +53,19 @@ function displayRandomArticles() {
     .slice(0, 6); // Pick the first 6
 
   randomArticles.forEach((article) => {
-    const articleElement = document.createElement("div");
+    const articleElement = document.createElement("a");
     articleElement.classList.add("article");
+    articleElement.href = article.link; // Add the article link
+    articleElement.target = "_blank"; // Open in a new tab
     articleElement.innerHTML = `
       <div class="article-header">
         <img src="${article.cover}" alt="${article.title}">
-        <a href="${article.link}" target="_blank"><h3>${article.title} <span>↗</span></h3></a>
+        <h3 class="link">${article.title} <span>↗</span></h3>
       </div>
       <p>By ${article.author} on ${article.date}</p>
     `;
+
+    // Append the clickable article to the container
     articlesContainer.appendChild(articleElement);
   });
 }
