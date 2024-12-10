@@ -1,3 +1,4 @@
+import Image from "next/image";
 import "./globals.css";
 
 export default function Home() {
@@ -5,13 +6,20 @@ export default function Home() {
     <div className="container">
       <div className="hero">
         <h1>Curated Medium articles</h1>
-        <h2>
-          Read some curated UI/UX design article from Medium. <br /> Some
-          articles might require a premium account.
-        </h2>
-        <button id="scrape-button" className="btn">
-          Scrape my list
-        </button>
+        <h2>Read some curated UI/UX design article from Medium.</h2>
+        <div className="info">
+          <Image
+            src="icons/icon-info-circle.svg"
+            alt="Information Icon"
+            width={32}
+            height={32}
+            className="info-icon"
+          />
+          <h3 className="info-text">
+            Some articles might require a premium account.
+          </h3>
+        </div>
+        <button id="scrape-button">Scrape my list</button>
       </div>
       <div id="articles" className="articles"></div>
       <div className="footer">

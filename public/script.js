@@ -59,7 +59,7 @@ function displayRandomArticles() {
     articleElement.target = "_blank"; // Open in a new tab
     articleElement.innerHTML = `
       <div class="article-header">
-        <img src="${article.cover}" alt="${article.title}">
+        <img class="article-img" src="${article.cover}" alt="${article.title}">
         <h3 class="link">${article.title} <span>↗</span></h3>
       </div>
       <p>By ${article.author} on ${article.date}</p>
