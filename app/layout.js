@@ -15,6 +15,8 @@ const geistMono = localFont({
 export const metadata = {
   title: "Medium scraper",
   description: "Read about the latest UI/UX articles from Medium.",
+  image:
+    "https://github.com/user-attachments/assets/6e0c39ed-33a1-4641-acc9-07b46d79291b",
 };
 
 export default function RootLayout({ children }) {
