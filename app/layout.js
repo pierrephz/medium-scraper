@@ -13,7 +13,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Medium scraper from Pierre",
+  title: "Medium scraper",
   description: "Read about the latest UI/UX articles from Medium.",
 };
 
