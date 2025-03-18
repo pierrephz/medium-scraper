@@ -5,7 +5,12 @@ export async function GET(request) {
   try {
     const url = "https://medium.com/@pierrephz/list/uiux-design-aea9a113ca2d";
 
-    const { data } = await axios.get(url);
+    const { data } = await axios.get(url, {
+      // Add request header to verify that you are not a bot
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+      }
+    });
     const $ = load(data); // Load the HTML into Cheerio
 
     const articles = [];
